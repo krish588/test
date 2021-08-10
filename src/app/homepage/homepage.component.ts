@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  gridColumns = 3;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+  toggleGridColumns() {
+    this.gridColumns = this.gridColumns === 3 ? 4 : 3;
   }
 
 }
